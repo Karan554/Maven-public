@@ -12,7 +12,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
-      - mv target/ROOT.war ROOT.war
+      - mv target/*.war ROOT.war
 artifacts:
   files:
     - ROOT.war
