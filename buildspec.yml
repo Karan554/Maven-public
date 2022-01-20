@@ -12,8 +12,10 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
+      - mv target/ROOT.war ROOT.war
 artifacts:
   files:
+    - ROOT.war
     - target/*.war
     - appspec.yml
     
